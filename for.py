@@ -54,3 +54,9 @@ pd.plotting.scatter_matrix(Auto);
 
 
 pd.plotting.scatter_matrix(Auto[['mpg','displacement','weight']]);
+
+
+Auto[['mpg','weight']].describe()
+
+Auto['cylinders'].describe()
+Auto['mpg'].describe()
