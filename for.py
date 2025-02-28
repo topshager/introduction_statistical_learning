@@ -31,3 +31,7 @@ ax.set_title('Horsepower vs. MPG')
 
 fig = ax.figure
 fig.savefig('horsepower_mpg.png');
+
+
+fig,axes = subplots(ncols=3,figsize=(15,5))
+Auto.plot.scatter('horsepower','mpg',ax=axes[1]);
