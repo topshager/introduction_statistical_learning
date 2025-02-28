@@ -49,3 +49,5 @@ Auto.hist('mpg',ax=ax);
 
 fix,ax = subplots(figsize=(8,8))
 Auto.hist('mpg',color='red',bins=12,ax=ax);
+
+pd.plotting.scatter_matrix(Auto);
