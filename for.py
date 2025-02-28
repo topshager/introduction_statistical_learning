@@ -35,3 +35,9 @@ fig.savefig('horsepower_mpg.png');
 
 fig,axes = subplots(ncols=3,figsize=(15,5))
 Auto.plot.scatter('horsepower','mpg',ax=axes[1]);
+
+Auto.cylinders = pd.Series(Auto.cylinders,dtype ='category')
+Auto.cylinders.dtype
+
+fig,ax = subplots(figsize=(8,8))
+Auto.boxplot('mpg',by='cylinders',ax=ax);
