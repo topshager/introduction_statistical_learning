@@ -24,3 +24,7 @@ for col in D.columns:
 
 fix,ax = subplots(figsize=(8,8))
 ax.plot(Auto['horsepower'],Auto['mpg'],'o');
+
+
+ax =Auto.plot.scatter('horsepower','mpg');
+ax.set_title('Horsepower vs. MPG')
