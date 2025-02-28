@@ -28,3 +28,6 @@ ax.plot(Auto['horsepower'],Auto['mpg'],'o');
 
 ax =Auto.plot.scatter('horsepower','mpg');
 ax.set_title('Horsepower vs. MPG')
+
+fig = ax.figure
+fig.savefig('horsepower_mpg.png');
