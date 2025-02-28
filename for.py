@@ -20,3 +20,7 @@ print('Weighted average is: {0} '.format(total))
 for col in D.columns:
     template = 'column "{0}" has {1:.2%} missing values'
     print(template.format(col,np.isnan(D[col]).mean()),)
+
+
+fix,ax = subplots(figsize=(8,8))
+ax.plot(Auto['horsepower'],Auto['mpg'],'o');
