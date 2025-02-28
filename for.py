@@ -41,3 +41,8 @@ Auto.cylinders.dtype
 
 fig,ax = subplots(figsize=(8,8))
 Auto.boxplot('mpg',by='cylinders',ax=ax);
+
+
+
+fig,ax = subplots(figsize=(8,8))
+Auto.hist('mpg',ax=ax);
